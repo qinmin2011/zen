@@ -42,6 +42,7 @@ Cocoa中会导致Carsh的地方：
 	- (NSString *)substringToIndex:(NSUInteger)to;
 	- (NSString *)substringWithRange:(NSRange)range;  
 	~~~
+ int number类型，但是实际接收类似为string. 调用stringvalue。如：推送的时候，定义一个Nsnumber *type,但是type为字符串。用[type stringValue]就会奔溃。
 
 ##2. 访问悬挂指针（Dangling pointer）
 
